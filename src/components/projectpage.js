@@ -1,0 +1,107 @@
+import "./styles.css"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import OverHead from "./Header"
+import Footer from "./Footer"
+
+
+
+let projectArray = [
+    {
+        id: 0,
+        title: "Simulator Game",
+        types: ["JS", "HTML","CSS", "ES6"],
+        description: [
+            "User can create maze and direct lemmings through to the exit",
+            "Has upgrade store to increase points counter",
+            "User input is automatically saved across sessions",
+            "Quicksave feature that saves layout of maze",
+            "Scoreboard to save highscores across sessions"
+        ],
+        image: "simgame.png",
+        alt: "A game with DOS graphics",
+        link: "https://github.com/",
+        github: "https://github.com/"
+    },
+    {
+        id: 1,
+        title: "Recipe Generator",
+        types: ["JS", "HTML","CSS","Webpack","Node.js","Rest APIs"],
+        description: [
+            "Allows the user to input a combination of ingredients to generate a recipe",
+            "The user can add their own ingredients and recipes, which are saved across sessions",
+            "Responsive design, can be used on different devices",
+            "Uses Wikimedia API to aquire an image and short description of the recipe",
+            "Uses Google's Search API to get the top results for the recipe created"
+        ],
+        image: "recipegen.png",
+        alt: "A program to find recipes with three ingredients",
+        link: "https://github.com/",
+        github: "https://github.com/"
+    },
+    {
+        id: 2,
+        title: "Portfolio Website",
+        types: ["React", "HTML","CSS"],
+        description: [
+            "The website you are using right now!",
+            "The projects list is generated using React",
+            "Responsive Design, can be viewed on diffent mobile devices"
+        ],
+        image: "mywebsite.png",
+        alt: "The website you're on now!",
+        link: "https://github.com/",
+        github: "https://github.com/"
+    },
+    {
+        id: 3,
+        title: "Store Website",
+        types: ["Javascript", "HTML","CSS", "React"],
+        description: [
+            "Converted from Javascript to React",
+            "User can filter products using dynamically added parameters, and add items to their cart",
+            "Responsive Design"
+        ],
+        image: "place.png",
+        alt: "A store's website",
+        link: "https://github.com/",
+        github: "https://github.com/"
+    }
+]
+
+
+function ProjectPage() {
+    return <>
+    <OverHead />
+    <CreateProjects />
+    <Footer />
+    </>
+}
+
+function CreateProjects() {
+    return projectArray.map((project) => {
+        return <>
+        <div className ="container" key={project.id}>
+            <div id="left">
+                <img src={'./img/' + project.image} alt={project.alt} className="project-img" onClick={window.open(project.github)}/>
+            </div>
+            <div id='right'>
+                <div className="title">{project.title}</div>
+                <div className="types">{project.types.join(" • ")}</div>
+                <ul>
+                    {project.description.map(item => {
+                        return <li>{item}</li>
+                    })}
+                </ul>
+            </div>
+        </div>
+        </>
+    })
+}
+
+export default ProjectPage
+
+
+
+// check all buttons pointing to right place, link linkedin
+// pictures

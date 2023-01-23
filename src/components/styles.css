@@ -1,0 +1,673 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+img {
+    max-width: 100%;
+    min-width: 200px;
+    width: 570px;
+    height:auto;
+}
+
+img:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button {
+    background: white;
+    color: darkslategrey;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px 0 rgba(0,0,0, 0.45);
+    border-radius: 6px;
+}
+
+button:hover {
+    transition-duration: 0.1s;
+    background: rgb(211, 211, 211);
+}
+
+button:active {
+    background: rgb(211, 211, 211);
+    box-shadow: 0 2px 0 rgba(0,0,0, 0.45);
+    transform: translateY(1px);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}  
+
+#overhead {
+    background-color:white;
+    color: darkslategrey;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin: 12px 0;
+    padding: 20px;
+    align-items: center;
+}
+
+#project {
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: auto;
+}
+
+
+.linkedin {
+    margin-right: 20px;
+}
+
+.linkedin:hover {
+    cursor: pointer;
+}
+
+.github:hover {
+    cursor: pointer;
+}
+
+.about:hover {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 30px;
+}
+
+#right {
+    border-left: 5px solid darkslategray;
+    border-radius: 4px;
+    padding-left: 40px;
+    min-width: 50%;
+}
+
+.title {
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about:hover {
+    cursor: pointer;
+}
+
+#projects:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+  }  
+
+.one {
+    display: flex;
+    background-color:white;
+    color: darkslategrey;
+    flex-direction: column;
+}
+
+#linkedin {
+    cursor: pointer;
+}
+
+#onelower {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 125px;
+    gap: 18px;
+
+}
+
+.onetitle {
+    display: flex;
+    font-size: 70px;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+.onepara {
+    display: flex;
+    font-size: 20px;
+    min-width: 340px;
+    animation-name: fadein;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+
+#contone {
+    align-items: center;
+    margin: 100px 120px;
+    border-radius: 10px;
+    max-width: fit-content;
+    animation-name: fadein;
+    animation-duration: 4s;
+    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 39%), 0 17px 50px 0 rgb(0 0 0 / 25%);
+    padding: 10px 18px 0;
+}
+
+#oneborder {
+    width: 275px;
+    height: 150px;
+    display: flex;
+    background: white;
+}
+
+.alone {
+    margin: 18px 18px -26px !important;
+}
+
+#topbtn {
+    margin: 50px;
+    min-width: 150px;
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+button {
+    background: white;
+    color: darkslategrey;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px 0 rgb(0 0 0 / 45%), 0 2px 20px 0 rgb(0 0 0 / 25%);
+    border-radius: 6px;
+}
+
+button:hover {
+    transition-duration: 0.1s;
+    background: rgb(211, 211, 211);
+}
+
+button:active {
+    background: rgb(211, 211, 211);
+    box-shadow: 0 2px 0 rgba(0,0,0, 0.45);
+    transform: translateY(1px);
+}
+
+.section {
+    display: flex;
+    height: 450px;
+    justify-content: center;
+}
+
+#hoverel {
+    background-color: white;
+    color: darkslategrey;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 22px;
+    transform: translate(-137px, -4px) rotate(-18deg);
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 88%);
+}
+
+#hoverel:hover {
+    animation-name: wobble;
+    animation-duration: 0.5s;
+}
+
+#hoverelalt {
+    background-color: white;
+    color: darkslategrey;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 22px;
+    transform: translate(121px, -5px) rotate(18deg);
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 88%);
+}
+
+#hoverelalt:hover {
+    animation-name: wobblealt;
+    animation-duration: 0.5s;
+}
+
+.border {
+    display: flex;
+    border-radius: 6px;
+    margin: 60px 50px;
+    min-width: 320px;
+    background: white;
+}
+
+#examples {
+    display: flex;
+    flex-direction: column;
+    animation-duration: 2s;
+    align-items: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.para {
+    display: flex;
+    font-size: 16px;
+    align-self: center;
+}
+
+.leftyone {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    animation-name: fadein;
+    animation-duration: 2s;
+    margin: 0 15px;
+}
+
+.leftyonetitle {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.leftyonedes {
+    font-size: 16px;
+}
+
+.leftyonelist {
+    font-size: 18px;
+}
+
+#two {
+    background-color: #ad3013;
+    color: #faf4ec;
+}
+
+#three {
+    background-color: rgb(58, 55, 75);
+    color: white;
+}
+
+#four {
+    background-color: #a05800;
+    color: white;
+}
+
+#fourborder {
+    display: flex;
+    border: 14px solid gray;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin: 46px 84px;
+}
+
+#lowbtn {
+    display: flex;
+    font-size: 16px;
+    align-self: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+.low {
+    display: flex;
+    align-self: center;
+}
+
+.links {
+    display: flex;
+    align-self: center;
+    list-style: none;
+}
+
+a {
+    display: flex;
+    padding: 0 20px;
+    text-decoration: none;
+    color: inherit;
+  } 
+
+#morebtn {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    font-size: 30px;
+}
+
+.lowestbtn {
+    display: flex;
+    padding: 10px 20px;
+}
+
+#lowerbtn {
+    display: flex;
+    gap: 50px;
+}
+
+#lowerbtnfaq {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+@keyframes wobble {
+    0% {transform: translate(-137px, -4px) rotate(-18deg);}
+    50% {transform: translate(-137px, -4px) rotate(-10deg);}
+    100% {transform: translate(-137px, -4px) rotate(-18deg);}
+}
+
+@keyframes wobblealt {
+    0% {transform: translate(121px, -5px) rotate(-18deg);}
+    50% {transform: translate(121px, -5px) rotate(-10deg);}
+    100% {transform: translate(121px, -5px) rotate(-18deg);}
+}
+
+
+@keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+    animation-iteration-count: 1;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+    animation-iteration-count: 1;
+  }
+  .reveal {
+    position: relative;
+    opacity: 0;
+    animation-iteration-count: 1;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    animation-iteration-count: 1;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  #overhead-title {
+    left: 0;
+    padding-left: 30px;
+    position: absolute;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  #content {
+    display: flex;
+    padding: 80px;
+    margin-top: 40px;
+    gap: 120px;
+    align-items: center;
+  }
+
+  #faq-footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .faq-about {
+    left: 0;
+    position: absolute;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: larger;
+  }
+
+  #text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #project-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-img {
+    border: 13px solid black;
+    border-radius: 13px;
+  }
+
+  @media (max-width: 749px) {
+    #onelower {
+      display: flex;
+      flex-direction: column;
+    }
+    .cont {
+        margin: 20px;
+        align-items: center;
+    }
+    .onepara {
+        text-align: center;
+        margin: 0 50px;
+    }
+    #contone {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .section {
+        display: flex;
+        height: 750px;
+    }
+    #two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #four {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #right {
+        border: none;
+        padding: 0;
+    }
+    .container {
+        gap: 40px;
+        margin: 10px;
+    }
+
+
+
+
+  }
+
+  @media (max-width: 550px) {
+    .container {
+        flex-direction: column;
+    }
+    .project-img {
+        width: 275px;
+        max-width: none;
+    }
+  }
+
+
+  @media (max-width: 470px) {
+    #morebtn {
+        width: auto;
+    }
+    #overhead {
+        display: none;
+    }
+    .leftyone {
+        width:auto;
+    }
+    .lowestbtn {
+        width: max-content;
+    }
+    #three {
+        padding-top: 20px;
+    }
+    #two {
+        padding-bottom: 40px;
+    }
+    #lowerbtn {
+        gap: 20px;
+    }
+    #lowerbtnfaq {
+        gap: 20px;
+    }
+    
+    #content {
+        flex-direction: column;
+        margin: 0;
+        gap: 30px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    #lowerbtn {
+        flex-direction: column;
+        align-items: center;
+    }
+    #hoverel {
+        display: none;
+    }
+    #hoverelalt {
+        display: none;
+    }
+    .border {
+        min-width: 0;
+    }
+    .onetitle {
+        font-size: 50px;
+    }
+    .onepara {
+        margin: 0;
+        min-width: 0;
+    }
+    #oneborder {
+        width: 200px;
+        height: 115px;
+    }
+    #contone {
+        padding: 10px 0 0;
+    }
+    .section {
+        height: 875px;
+    }
+    #oneborder {
+        margin-top: 20px;
+    }
+
+
+    #project-footer {
+        flex-direction: column;
+    }
+    .linkedin {
+        margin: 0;
+    }
+
+    #lowerbtnfaq {
+        gap: 5px;
+    }
+    #content {
+        padding: 30px 50px;
+    }
+    .lowestbtn {
+        padding: 10px 18px;
+    }
+  }
