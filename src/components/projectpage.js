@@ -10,7 +10,7 @@ let projectArray = [
     {
         id: 0,
         title: "Simulator Game",
-        types: ["JS", "HTML","CSS", "ES6"],
+        types: ["JS", "HTML","CSS"],
         description: [
             "User can create maze and direct lemmings through to the exit",
             "Has upgrade store to increase points counter",
@@ -20,8 +20,8 @@ let projectArray = [
         ],
         image: "simgame.png",
         alt: "A game with DOS graphics",
-        link: "https://github.com/",
-        github: "https://github.com/"
+        link: "https://github.com/lonelylampost/simulator-game",
+        github: "https://github.com/lonelylampost/simulator-game"
     },
     {
         id: 1,
@@ -36,8 +36,8 @@ let projectArray = [
         ],
         image: "recipegen.png",
         alt: "A program to find recipes with three ingredients",
-        link: "https://github.com/",
-        github: "https://github.com/"
+        link: "https://github.com/lonelylampost/recipe-generator",
+        github: "https://github.com/lonelylampost/recipe-generator"
     },
     {
         id: 2,
@@ -45,13 +45,13 @@ let projectArray = [
         types: ["React", "HTML","CSS"],
         description: [
             "The website you are using right now!",
-            "The projects list is generated using React",
+            "The projects webpage is generated from reading a list of objects",
             "Responsive Design, can be viewed on diffent mobile devices"
         ],
         image: "mywebsite.png",
         alt: "The website you're on now!",
-        link: "https://github.com/",
-        github: "https://github.com/"
+        link: "https://github.com/lonelylampost/portfolio-website",
+        github: "https://github.com/lonelylampost/portfolio-website"
     },
     {
         id: 3,
@@ -59,13 +59,13 @@ let projectArray = [
         types: ["Javascript", "HTML","CSS", "React"],
         description: [
             "Converted from Javascript to React",
-            "User can filter products using dynamically added parameters, and add items to their cart",
-            "Responsive Design"
+            "User can add and remove products using useContext hooks",
+            "Products are diplayed by reading from a list of items, and filtered out by keywords"
         ],
-        image: "place.png",
+        image: "storepage.png",
         alt: "A store's website",
-        link: "https://github.com/",
-        github: "https://github.com/"
+        link: "https://github.com/lonelylampost/Sample-shopping-website",
+        github: "https://github.com/lonelylampost/Sample-shopping-website"
     }
 ]
 
