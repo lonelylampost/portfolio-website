@@ -42,14 +42,14 @@ function MakeHomepage() {
     }
 
     function goToThree() {
-        window.open('https://github.com/lonelylampost/simulator-game')
+        window.open('https://lonelylampost.github.io/simulator-game/')
     }
 
     function goToThreeGit() {
         window.open('https://github.com/lonelylampost/simulator-game')
     }
     function goToFour() {
-        window.open('https://github.com/lonelylampost/Sample-shopping-website')
+        window.open(' https://lonelylampost.github.io/sample-shopping-website/')
     }
 
     function goToFourGit() {

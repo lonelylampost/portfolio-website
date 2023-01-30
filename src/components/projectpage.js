@@ -20,7 +20,7 @@ let projectArray = [
         ],
         image: "simgame.png",
         alt: "A game with DOS graphics",
-        link: "https://github.com/lonelylampost/simulator-game",
+        link: "https://lonelylampost.github.io/simulator-game/",
         github: "https://github.com/lonelylampost/simulator-game"
     },
     {
@@ -64,7 +64,7 @@ let projectArray = [
         ],
         image: "storepage.png",
         alt: "A store's website",
-        link: "https://github.com/lonelylampost/Sample-shopping-website",
+        link: " https://lonelylampost.github.io/sample-shopping-website/",
         github: "https://github.com/lonelylampost/Sample-shopping-website"
     }
 ]
