@@ -26,7 +26,7 @@ let projectArray = [
     {
         id: 1,
         title: "Recipe Generator",
-        types: ["JS", "HTML","CSS","Webpack","Node.js","Rest APIs"],
+        types: ["JS", "HTML","CSS","Webpack","Node.js","Rest API"],
         description: [
             "Allows the user to input a combination of ingredients to generate a recipe",
             "The user can add their own ingredients and recipes, which are saved across sessions",
@@ -83,7 +83,7 @@ function CreateProjects() {
         return <>
         <div className ="container" key={project.id}>
             <div id="left">
-                <img src={'./img/' + project.image} alt={project.alt} className="project-img" onClick={window.open(project.github)}/>
+                <img src={'./img/' + project.image} alt={project.alt} className="project-img" onClick={() => {window.open(project.github)}}/>
             </div>
             <div id='right'>
                 <div className="title">{project.title}</div>
@@ -100,8 +100,3 @@ function CreateProjects() {
 }
 
 export default ProjectPage
-
-
-
-// check all buttons pointing to right place, link linkedin
-// pictures

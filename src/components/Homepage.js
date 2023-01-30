@@ -34,26 +34,26 @@ function MakeHomepage() {
     }
 
     function goToTwo() {
-        navigate('/faq')
+        window.open('https://github.com/lonelylampost/recipe-generator')
     }
 
     function goToTwoGit() {
-        navigate('/projects')
+        window.open('https://github.com/lonelylampost/recipe-generator')
     }
 
     function goToThree() {
-        navigate('/faq')
+        window.open('https://github.com/lonelylampost/simulator-game')
     }
 
     function goToThreeGit() {
-        navigate('/projects')
+        window.open('https://github.com/lonelylampost/simulator-game')
     }
     function goToFour() {
-        navigate('/faq')
+        window.open('https://github.com/lonelylampost/Sample-shopping-website')
     }
 
     function goToFourGit() {
-        navigate('/projects')
+        window.open('https://github.com/lonelylampost/Sample-shopping-website')
     }
 
     function reveal() {
@@ -87,7 +87,7 @@ function MakeHomepage() {
                         <div className="onepara">My name is Kimberly Sine. I'm a front-end web developer that uses Javascript, React, and Node.js. Scroll down to see some of my projects!</div>
                     </div>
                     <div id="contone" className="cont">
-                        <img id="oneborder" className="alone" src="./img/place.png" alt="Github page" onClick={openGithub}/>
+                        <img id="oneborder" className="alone" src="./img/mygithub.png" alt="Github page" onClick={openGithub}/>
                         <button id="topbtn" onClick={openGithub}>Check it out!</button>
                     </div>
                 </div>
@@ -132,11 +132,11 @@ function MakeHomepage() {
             <div id ="four" className="section reveal fade-left">
                 <div id="examples" className="border">
                     <div id="hoverel">React</div>
-                        <img id="oneborder" src="./img/place.png" alt="Sample website" onClick={goToThree} />
-                    <button id="topbtn" onClick={goToThreeGit}>Check it out!</button>
+                        <img id="oneborder" src="./img/storepage.png" alt="Sample website" onClick={goToFour} />
+                    <button id="topbtn" onClick={goToFourGit}>Check it out!</button>
                 </div>
                 <div className="leftyone">
-                    <div className="leftyonetitle">Sample Shopping Website</div>
+                    <div className="leftyonetitle">Storefront</div>
                     <div className="leftyonedes">HTML - CSS - JS - React</div>
                     <ul className="leftyonelist">
                         <li>Converted from Javascript to React</li>

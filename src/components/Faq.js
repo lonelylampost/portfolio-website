@@ -37,7 +37,7 @@ function About() {
                 <div className="linkedin" onClick={openLinkedin}>LinkedIn</div>
             </div>
             <div id="content">
-                <img src="./img/place.png" onClick={openLinkedin}/>
+                <div id="profile-img" onClick={openLinkedin}>KS</div>
                 <div className="onepara"> Graduated from George Brown College in 2022 with a certificate in Art and Design, currently living in Toronto, Canada. Front-end web developer, using React and Javascript.</div>
             </div>
         </div>
