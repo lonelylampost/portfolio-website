@@ -1,9 +1,5 @@
 import "./styles.css"
 import React from 'react'
-import ReactDOM from 'react-dom'
-
-import OverHead from "./Header";
-import Footer from "./Footer";
 import { useNavigate } from 'react-router-dom';
 
 
@@ -17,10 +13,6 @@ function MakeHomepage() {
 
     const navigate = useNavigate();
 
-    function goToFAQ() {
-        navigate('/about')
-    }
-
     function goToProjects() {
         navigate('/projects')
     }
@@ -31,29 +23,6 @@ function MakeHomepage() {
 
     function openLinkedin() {
         window.open('https://ca.linkedin.com/in/kim-sine/')
-    }
-
-    function goToTwo() {
-        window.open('https://github.com/lonelylampost/recipe-generator')
-    }
-
-    function goToTwoGit() {
-        window.open('https://github.com/lonelylampost/recipe-generator')
-    }
-
-    function goToThree() {
-        window.open('https://lonelylampost.github.io/simulator-game/')
-    }
-
-    function goToThreeGit() {
-        window.open('https://github.com/lonelylampost/simulator-game')
-    }
-    function goToFour() {
-        window.open(' https://lonelylampost.github.io/sample-shopping-website/')
-    }
-
-    function goToFourGit() {
-        window.open('https://github.com/lonelylampost/Sample-shopping-website')
     }
 
     function reveal() {
@@ -68,7 +37,7 @@ function MakeHomepage() {
             reveals[i].classList.add("active");
           }
         }
-      }
+    }
       
       window.addEventListener("scroll", reveal);
 
@@ -76,7 +45,6 @@ function MakeHomepage() {
         <div className="main">
             <div id="overhead" className="sticky">
                 <div id="overhead-title">Homepage</div>
-                <div id="about" onClick={goToFAQ}>About me</div>
                 <div id="projects" onClick={goToProjects}>Projects</div>
                 <div id="linkedin" onClick={openLinkedin}>LinkedIn</div>
             </div>
@@ -84,7 +52,7 @@ function MakeHomepage() {
                 <div id="onelower">
                     <div className="cont">
                         <div className="onetitle">Welcome!</div>
-                        <div className="onepara">My name is Kimberly Sine. I'm a front-end web developer that uses Javascript, React, and Node.js. Scroll down to see some of my projects!</div>
+                        <div className="onepara">My name is Kimberly Sine. I'm a front-end web developer that the MERN Stack. Scroll down to see some of my projects!</div>
                     </div>
                     <div id="contone" className="cont">
                         <img id="oneborder" className="alone" src="./img/mygithub.png" alt="Github page" onClick={openGithub}/>
@@ -94,13 +62,13 @@ function MakeHomepage() {
             </div>
             <div id ="two" className="section reveal fade-left" >
                 <div id="examples" className="border ">
-                    <div id="hoverel">Javascript</div>
-                        <img id="oneborder" src="./img/recipegen.png" alt="Recipe Generator" onClick={goToTwo}/>
-                    <button id="topbtn" onClick={goToTwoGit}>Check it out!</button>
+                    <div id="hoverel">JavaScript</div>
+                        <img id="oneborder" src="./img/recipegen.png" alt="Recipe Generator" onClick={() => {window.open('https://github.com/lonelylampost/recipe-generator')}}/>
+                    <button id="topbtn" onClick={() => {window.open('https://github.com/lonelylampost/recipe-generator')}}>Check it out!</button>
                 </div>
                 <div className="leftyone">
                     <div className="leftyonetitle">Recipe Generator</div>
-                    <div className="leftyonedes">HTML - CSS - JS - NODE.JS - WEBPACK - REST API</div>
+                    <div className="leftyonedes">HTML - CSS - JS - WEBPACK - REST API</div>
                     <ul className="leftyonelist">
                         <li>Allows the user to input a combination of ingredients to generate a recipe</li>
                         <li>The user can add their own ingredients and recipes, which are saved across sessions</li>
@@ -123,21 +91,21 @@ function MakeHomepage() {
                     </ul>
                 </div>
                 <div id="examples" className="border">
-                    <div id="hoverelalt">Javascript</div>
-                        <img id="oneborder" src="./img/simgame.png" alt="Simulator Game" onClick={goToThree} />
-                    <button id="topbtn" onClick={goToThreeGit}>Check it out!</button>
+                    <div id="hoverelalt">JavaScript</div>
+                        <img id="oneborder" src="./img/simgame.png" alt="Simulator Game" onClick={() => {window.open('https://lonelylampost.github.io/simulator-game/')}} />
+                    <button id="topbtn" onClick={() => {window.open('https://github.com/lonelylampost/simulator-game')}}>Check it out!</button>
                 </div>
 
             </div>
             <div id ="four" className="section reveal fade-left">
                 <div id="examples" className="border">
                     <div id="hoverel">React</div>
-                        <img id="oneborder" src="./img/storepage.png" alt="Sample website" onClick={goToFour} />
-                    <button id="topbtn" onClick={goToFourGit}>Check it out!</button>
+                        <img id="oneborder" src="./img/storepage.png" alt="Sample website" onClick={() => {window.open('https://lonelylampost.github.io/sample-shopping-website/')}} />
+                    <button id="topbtn" onClick={() => {window.open('https://github.com/lonelylampost/Sample-shopping-website')}}>Check it out!</button>
                 </div>
                 <div className="leftyone">
                     <div className="leftyonetitle">Storefront</div>
-                    <div className="leftyonedes">HTML - CSS - JS - React</div>
+                    <div className="leftyonedes">HTML - CSS - JS - REACT.JS - NODE.JS - EXPRESS.JS - MONGODB - MONGOOSE</div>
                     <ul className="leftyonelist">
                         <li>Converted from Javascript to React</li>
                         <li>User can filter products using dynamically added parameters, and add items to their cart</li>
@@ -147,16 +115,9 @@ function MakeHomepage() {
                 </div>
             </div>
         </div>
-    
         <footer>
             <button id ="morebtn" onClick={goToProjects}>MORE PROJECTS</button>
-            <div id="lowerbtn">
-                <button className="lowestbtn" id="about" onClick={goToFAQ}>About me</button>
-                <button className="lowestbtn" id="github" onClick={openGithub}>Github</button>
-                <button className="lowestbtn" id="linkedin" onClick={openLinkedin}>LinkedIn</button>
-            </div>
         </footer>
-
     </>
 }
 
